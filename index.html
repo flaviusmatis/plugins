@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Plugins</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div id="plugins-sidebar" class="plugins-sidebar">
+
+</div>
+
+<div id="plugins-content" class="plugins-content">
+	<iframe src="default-content.html" width="100%" height="100%" frameborder="0">
+		<p>Your browser does not support iframes. That kinda sucks, eh?</p>
+	</iframe>
+</div>
+
+<script id="pluginsTemplate" type="text/x-jquery-tmpl">
+	<div id="search-wrapper" class="search">
+		<input type="text" name="search" placeholder="Search through plugins"/>
+	</div>
+	{{each plugins}}
+		<h2>${category}</h2>
+		<ul>
+		{{each items}}
+			<li title="${name}" class="ellipsis" data-url="${url}">${name}</li>
+		{{/each}}
+		</ul>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

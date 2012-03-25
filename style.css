@@ -1,0 +1,110 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.plugins-sidebar {
+	background: #F6F6F6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 240px;
+	overflow: hidden;
+	box-shadow: 2px 0 2px rgba(0,0,0,0.3), inset -1px 0 0 rgba(0,0,0,0.3);
+	z-index: 2;
+}
+
+.plugins-sidebar h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+	background: #CCC;
+	padding: 10px;
+	margin: 0 1px 0 0;
+	border-bottom: 3px solid #FFF;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.plugins-sidebar ul {
+	padding: 0 1px 0 0;
+	margin: 0;
+	list-style: none;
+	display: none;
+}
+
+.plugins-sidebar ul li {
+	padding: 10px;
+	border-bottom: 3px solid #FFF;
+}
+
+.plugins-sidebar ul li:hover {
+	background: #CCC;
+	cursor: pointer;
+}
+
+.search {
+	padding: 10px;
+}
+
+.search input {
+	border: 1px solid #CCC;
+	padding: 5px;
+	border-radius: 5px;
+	width: 208px;
+}
+
+.plugins-content {
+	background: #FFF;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 240px;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+#default {
+	padding: 30px;
+	font-size: 18px;
+	position: relative;
+	overflow: visible;
+}
+
+#default p:before {
+	content: '';
+	float: left;
+	margin: 0 10px;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-right: 24px solid #333;
+	border-bottom: 12px solid transparent;
+}
