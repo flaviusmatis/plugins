@@ -28,56 +28,102 @@ body {
 }
 
 .plugins-sidebar {
-	background: #F6F6F6;
+	background: #F8F8F8;
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: 240px;
-	overflow: hidden;
-	box-shadow: 2px 0 2px rgba(0,0,0,0.3), inset -1px 0 0 rgba(0,0,0,0.3);
-	z-index: 2;
+	width: 280px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.3), inset -1px 0 0 0 rgba(0,0,0,0.3);
+	z-index: 3;
 }
 
-.plugins-sidebar h2 {
-	font-size: 16px;
-	text-transform: uppercase;
-	background: #CCC;
+.plugins-categories {
+	position: absolute;
+	top: 49px;
+	left: 0;
+	bottom: 0;
+	width: 279px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.plugins-categories:hover {
+	overflow-y: auto;
+}
+
+.plugins-categories h2 {
+	font-size: 15px;
 	padding: 10px;
-	margin: 0 1px 0 0;
-	border-bottom: 3px solid #FFF;
+	margin: 0;
 	cursor: pointer;
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
+	background: #F8F8F8;
+	border-bottom: 1px solid #DDD;
 }
 
-.plugins-sidebar ul {
-	padding: 0 1px 0 0;
+.plugins-categories h2.selected {
+	border: none;
+}
+
+.plugins-categories ul {
+	width: 279px;
+	padding: 0 0 10px 0;
 	margin: 0;
 	list-style: none;
 	display: none;
+	border-bottom: 1px solid #DDD;
 }
 
-.plugins-sidebar ul li {
-	padding: 10px;
-	border-bottom: 3px solid #FFF;
+.plugins-categories ul li {
+	padding: 9px 15px 9px 15px;
+	color: #4183C4;
+	font-size: 12px;
+	font-weight: bold;
 }
 
-.plugins-sidebar ul li:hover {
-	background: #CCC;
-	cursor: pointer;
+.plugins-categories ul li a {
+	display: none;
+	text-decoration: none;
+	color: #000;
+}
+
+.plugins-categories ul li.selected {
+	border-left: 3px solid #EE0000;
+	padding-left: 12px;
+	background: #EEE;
+}
+
+.plugins-categories ul li.selected a {
+	display: block;
+}
+
+.plugins-categories ul li.selected span {
+	display: none;
+}
+
+.plugins-categories ul li:hover {
+	background: #EEE;
+	cursor: default;
 }
 
 .search {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 259px;
 	padding: 10px;
+	background: #F6F6F6;
+	border-bottom: 1px solid #DDD;
 }
 
 .search input {
-	border: 1px solid #CCC;
+	border: 1px solid #BBB;
 	padding: 5px;
 	border-radius: 5px;
-	width: 208px;
+	width: 247px;
 }
 
 .plugins-content {
@@ -85,14 +131,14 @@ body {
 	overflow: hidden;
 	position: absolute;
 	top: 0;
-	left: 240px;
+	left: 280px;
 	right: 0;
 	bottom: 0;
 	z-index: 1;
 }
 
 #default {
-	padding: 30px;
+	padding: 35px 20px;
 	font-size: 18px;
 	position: relative;
 	overflow: visible;

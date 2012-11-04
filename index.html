@@ -8,7 +8,12 @@
 <body>
 
 <div id="plugins-sidebar" class="plugins-sidebar">
+	<div id="search-wrapper" class="search">
+		<input type="text" name="search" placeholder="Search plugins"/>
+	</div>
+	<div id="plugins-categories" class="plugins-categories">
 
+	</div>
 </div>
 
 <div id="plugins-content" class="plugins-content">
@@ -18,17 +23,15 @@
 </div>
 
 <script id="pluginsTemplate" type="text/x-jquery-tmpl">
-	<div id="search-wrapper" class="search">
-		<input type="text" name="search" placeholder="Search through plugins"/>
-	</div>
-	{{each plugins}}
 		<h2>${category}</h2>
 		<ul>
 		{{each items}}
-			<li title="${name}" class="ellipsis" data-url="${url}">${name}</li>
+			<li data-url="${url}">
+				<span title="${name}" class="ellipsis">${name}</span>
+				<a title="Click to open in new window." class="ellipsis" href="${url}" target="_blank">${name}</a>
+			</li>
 		{{/each}}
 		</ul>
-    {{/each}}
 </script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
