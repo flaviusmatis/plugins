@@ -187,19 +187,19 @@ body {
 }
 
 #default {
-	padding: 35px 20px;
+	padding: 20px 50px;
 	font-size: 18px;
 	position: relative;
+	z-index: 1;
 	overflow: visible;
+	max-width: 600px;
 }
 
-#default p:before {
-	content: '';
-	float: left;
-	margin: 0 10px;
-	width: 0;
-	height: 0;
-	border-top: 12px solid transparent;
-	border-right: 24px solid #333;
-	border-bottom: 12px solid transparent;
+#default p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#default a {
+	color: #4183C4;
 }

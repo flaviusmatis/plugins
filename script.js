@@ -1,62 +1,58 @@
 var categories = [
 	{
-		name: "Carousel & Slider",
-		tag: "carousel"
-	},
-	{
-		name: "Maps",
-		tag: "map"
-	},
-	{
-		name: "Templates",
-		tag: "template"
-	},
-	{
-		name: "Scrolling",
-		tag: "scroll"
+		name: "Currency",
+		tag: "currency"
 	},
 	{
 		name: "Date",
 		tag: "date"
 	},
 	{
-		name: "HTML Editors",
-		tag: "editor"
-	},
-	{
-		name: "Markdown",
-		tag: "markdown"
+		name: "Forms",
+		tag: "form"
 	},
 	{
 		name: "Highlighting",
 		tag: "highlight"
 	},
 	{
-		name: "Currency",
-		tag: "currency"
-	},
-	{
-		name: "AJAX",
-		tag: "ajax"
-	},
-	{
-		name: "Effects & UI",
-		tag: "ui"
+		name: "HTML Editors",
+		tag: "editor"
 	},
 	{
 		name: "Libraries",
 		tag: "library"
 	},
 	{
-		name: "Charts & Graphs",
+		name: "Maps",
+		tag: "map"
+	},
+	{
+		name: "Markdown",
+		tag: "markdown"
+	},
+	{
+		name: "Presentation, Sliders",
+		tag: "slide"
+	},
+	{
+		name: "Scrolling",
+		tag: "scroll"
+	},
+	{
+		name: "Templates",
+		tag: "template"
+	},
+	{
+		name: "UI, Effects",
+		tag: "ui"
+	},
+	{
+		name: "Visualization tools",
 		tag: "chart"
 	},
 	{
-		name: "Forms",
-		tag: "form"
-	},
-	{
-		name: "Other",
+		name: "Other...",
 		tag: "other"
 	}
 ];
@@ -65,57 +61,57 @@ var plugins = [
 	{
 		name: "Roundabout - Interactive, turntable-like areas",
 		url: "http://fredhq.com/projects/roundabout/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Slides - Simple slideshow plugin for jQuery",
 		url: "http://slidesjs.com/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Orbit - jQuery Image Slider Plugin",
 		url: "http://www.zurb.com/playground/jquery_image_slider_plugin",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Presentation Cycle",
 		url: "http://www.gayadesign.com/scripts/presentationCycle/index.php",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "jQuery Timelinr",
 		url: "http://www.csslab.cl/2011/08/18/jquery-timelinr/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Deck.js - Modern HTML Presentations",
 		url: "http://imakewebthings.com/deck.js/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Camera - jQuery slideshow by Pixedelic",
 		url: "http://www.pixedelic.com/plugins/camera/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Flux Slider - Hardware accelerated image transitions with CSS3",
 		url: "http://www.joelambert.co.uk/flux/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Responsive Slides - Simple & lightweight slider",
 		url: "http://responsive-slides.viljamis.com/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Fresco - A beautiful responsive lightbox",
 		url: "http://www.frescojs.com/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "Presenteer.js - Flexible HTML5 presentation tool",
 		url: "http://willemmulder.github.com/Presenteer.js/",
-		tag: "carousel"
+		tag: "slide"
 	},
 	{
 		name: "gmaps.js - Google Maps API",
@@ -258,21 +254,6 @@ var plugins = [
 		tag: "currency"
 	},
 	{
-		name: "Mockjax - Mock Your Ajax Requests",
-		url: "http://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development/",
-		tag: "ajax"
-	},
-	{
-		name: "NETEYE - Activity Indicator",
-		url: "http://neteye.github.com/activity-indicator.html",
-		tag: "ajax"
-	},
-	{
-		name: "spin.js - Animated CSS3 loading spinner",
-		url: "http://fgnass.github.com/spin.js/",
-		tag: "ajax"
-	},
-	{
 		name: "MagicLine Navigation With jQuery",
 		url: "http://css-tricks.com/jquery-magicline-navigation/",
 		tag: "ui"
@@ -323,6 +304,11 @@ var plugins = [
 		tag: "ui"
 	},
 	{
+		name: "Hammer.js - Library for multi-touch gestures",
+		url: "http://eightmedia.github.com/hammer.js/",
+		tag: "library"
+	},
+	{
 		name: "Micro.js - Collection of Micro-Frameworks",
 		url: "http://microjs.com/",
 		tag: "library"
@@ -353,11 +339,6 @@ var plugins = [
 		tag: "library"
 	},
 	{
-		name: "jQuery++ is a collection of extremely useful DOM helpers and special events",
-		url: "http://jquerypp.com/",
-		tag: "library"
-	},
-	{
 		name: "Toxiclibs.js - Open-source computational design library",
 		url: "http://haptic-data.com/toxiclibsjs/",
 		tag: "library"
@@ -370,6 +351,11 @@ var plugins = [
 	{
 		name: "Sigma.js - Draw graphs using the HTML canvas",
 		url: "http://sigmajs.org/",
+		tag: "chart"
+	},
+	{
+		name: "heatmap.js - Canvas based heatmaps",
+		url: "http://www.patrick-wied.at/static/heatmapjs/",
 		tag: "chart"
 	},
 	{
@@ -433,18 +419,8 @@ var plugins = [
 		tag: "other"
 	},
 	{
-		name: "heatmap.js - Canvas based heatmaps",
-		url: "http://www.patrick-wied.at/static/heatmapjs/",
-		tag: "other"
-	},
-	{
 		name: "Zoomooz.js - Make any web page zoom",
 		url: "http://janne.aukia.com/zoomooz/",
-		tag: "other"
-	},
-	{
-		name: "Hammer.js - Library for multi-touch gestures",
-		url: "http://eightmedia.github.com/hammer.js/",
 		tag: "other"
 	},
 	{
@@ -463,6 +439,11 @@ var plugins = [
 		tag: "other"
 	},
 	{
+		name: "jQuery++ is a collection of extremely useful DOM helpers and special events",
+		url: "http://jquerypp.com/",
+		tag: "other"
+	},
+	{
 		name: "trunk8.js - Text truncation extension to jQuery",
 		url: "http://jrvis.com/trunk8/",
 		tag: "other"
@@ -470,6 +451,16 @@ var plugins = [
 	{
 		name: "CamanJS - Pure Javascript (Ca)nvas (Man)ipulation",
 		url: "http://camanjs.com/",
+		tag: "other"
+	},
+	{
+		name: "Mockjax - Mock Your Ajax Requests",
+		url: "http://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development/",
+		tag: "other"
+	},
+	{
+		name: "spin.js - Animated CSS3 loading spinner",
+		url: "http://fgnass.github.com/spin.js/",
 		tag: "other"
 	},
 	{
