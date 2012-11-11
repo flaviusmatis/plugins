@@ -9,9 +9,9 @@
 
 <div id="plugins-sidebar" class="plugins-sidebar">
 	<div id="search-wrapper" class="search">
-		<input type="text" name="search" placeholder="Search plugins"/>
+		<input type="text" name="search" placeholder="Type to search"/>
 	</div>
-	<div id="plugins-categories" class="plugins-categories">
+	<div id="plugins" class="plugins">
 
 	</div>
 </div>
@@ -22,16 +22,33 @@
 	</iframe>
 </div>
 
-<script id="pluginsTemplate" type="text/x-jquery-tmpl">
-		<h2>${category}</h2>
-		<ul>
-		{{each items}}
-			<li data-url="${url}">
+<script id="cateogories-tmpl" type="text/x-jquery-tmpl">
+		<h2 data-tag="${tag}" data-name="${name}">
+			<span class="expand" title="Expand">+</span>
+			${name}
+		</h2>
+</script>
+
+<script id="category-tmpl" type="text/x-jquery-tmpl">
+	<h2 class="selected">
+		<span class="close" title="Close">&times;</span>
+		${category}
+	</h2>
+	<ul>
+		{{if items.length}}
+			{{each items}}
+			<li data-url="${url}" class="${selected}">
 				<span title="${name}" class="ellipsis">${name}</span>
 				<a title="Click to open in new window." class="ellipsis" href="${url}" target="_blank">${name}</a>
+				<em>[ click the above link to open plugin in new window ]</em>
 			</li>
-		{{/each}}
-		</ul>
+			{{/each}}
+		{{else}}
+			<li>
+				<span class="ellipsis">No plugins were found.</span>
+			</li>
+		{{/if}}
+	</ul>
 </script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
