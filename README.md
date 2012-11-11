@@ -1,3 +1,1 @@
-Hello :)
-
-[Live Project Is Here!](http://flaviusmatis.github.com/plugins/)
+[Live Project](http://flaviusmatis.github.com/plugins/)
