@@ -13,9 +13,32 @@
 	<p>The resources you'll find here are collected, sorted and filtered by me over the past months/years. There is no guarantee that these are the best you can find, though I try to stay up to date with the latest goodies on the interwebs.</p>
 	<p>If you have suggestions for new entries or usability improvements, you can submit <a href="https://github.com/flaviusmatis/plugins/issues" target="_blank">an issue</a> at anytime. If your entry is not accepted for whatever reason, forking this project and creating your own private/public collection is always an option.</p>
 	<p><a href="http://flaviusmatis.github.com/" target="_blank">http://flaviusmatis.github.com/</a></p>
+	<br/>
+	<p><strong>Featured resources:</strong></p>
+	<div id="featured">
+
+	</div>
 </div>
 
+<script id="featured-tmpl" type="text/x-jquery-tmpl">
+	{{if items.length}}
+		{{each items}}
+			{{if featured === true}}
+				<p class="ellipsis">
+					<a title="${name}" data-url="${url}" data-tag="${tag}">${name}</a>
+				</p>
+			{{/if}}
+		{{/each}}
+	{{else}}
+		<p>
+			<span class="ellipsis">No plugins were found.</span>
+		</p>
+	{{/if}}
+</script>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="default.js"></script>
 
 </body>
 </html>

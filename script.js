@@ -184,9 +184,15 @@ var plugins = [
 		tag: "scroll"
 	},
 	{
+		name: "Zynga Scroller - Accelerated panning and zooming for DOM and Canvas",
+		url: "http://zynga.github.com/scroller/",
+		tag: "scroll"
+	},
+	{
 		name: "Moment.js - Lightweight javascript date library",
 		url: "http://momentjs.com/",
-		tag: "date"
+		tag: "date",
+		featured: true
 	},
 	{
 		name: "XDate - Modern JavaScript Date Library",
@@ -386,6 +392,12 @@ var plugins = [
 	{
 		name: "Datavisualization.ch - Huge collection of data visualisation tools",
 		url: "http://selection.datavisualization.ch/",
+		tag: "chart",
+		featured: true
+	},
+	{
+		name: "Bonsai - JavaScript graphics library and SVG renderer",
+		url: "http://bonsaijs.org/",
 		tag: "chart"
 	},
 	{
@@ -467,10 +479,17 @@ var plugins = [
 		name: "Grunt - Task-based command line build tool for JavaScript projects",
 		url: "http://gruntjs.com/",
 		tag: "other"
+	},
+	{
+		name: "AppSeeds - Elegant JavaScript components for modern web applications",
+		url: "http://danburzo.github.com/appseeds/",
+		tag: "other",
+		featured: true
 	}
 ];
 
 var $plugins = $('#plugins'),
+	defaultContent = "default-content.html",
 	delayAction = (function(){
 		var timer = 0;
 		return function(callback, ms){
@@ -521,6 +540,10 @@ function changeIframeContent(url){
 	});
 }
 
+function openCategory(tag){
+	$plugins.find('[data-tag=' + tag + ']').trigger('click');
+}
+
 $plugins.on('click', 'li', function(){
 	if (!$(this).hasClass('selected')) {
 		var url = $(this).data('url');
@@ -555,7 +578,9 @@ $('[name=search]').keyup(function(){
 		return ((nameA < nameB) ? -1 : ((nameA > nameB) ? 1 : 0));
 	});
 
-	changeIframeContent("default-content.html");
+	if ($('iframe').prop('src') !== defaultContent) {
+		changeIframeContent(defaultContent);
+	}
 
 	resetView();
 })();
