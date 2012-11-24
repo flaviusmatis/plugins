@@ -54,13 +54,13 @@ body {
 	padding: 10px 15px;
 	margin: 0;
 	cursor: pointer;
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
 	background: #F6F6F6;
 	border-bottom: 1px solid #DDD;
 	position: relative;
 	z-index: 2;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
 }
 
 .plugins h2 .close, .plugins h2 .expand {
