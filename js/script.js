@@ -1,5 +1,5 @@
 var $plugins = $('#plugins'),
-	defaultContent = "default-content.html",
+	defaultContent = "default.html",
 	delayAction = (function(){
 		var timer = 0;
 		return function(callback, ms){
