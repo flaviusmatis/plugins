@@ -60,6 +60,11 @@ var plugins = [
 		tag: "slide"
 	},
 	{
+		name: "jHERE - Maps Made Easy",
+		url: "http://jhere.net/",
+		tag: "map"
+	},
+	{
 		name: "gmaps.js - Google Maps API",
 		url: "http://hpneo.github.com/gmaps/",
 		tag: "map"
@@ -154,6 +159,11 @@ var plugins = [
 		name: "pickadate.js - Lightweight jQuery dateinput picker",
 		url: "http://amsul.github.com/pickadate.js/",
 		tag: "date"
+	},
+	{
+		name: "tabIndent.js - Tab characters for your textarea",
+		url: "http://julianlam.github.com/tabIndent.js/",
+		tag: "editor"
 	},
 	{
 		name: "Create — Web editing interface",
@@ -306,6 +316,16 @@ var plugins = [
 		tag: "library"
 	},
 	{
+		name: "xCharts - a D3-based library for building custom charts and graphs",
+		url: "http://tenxer.github.com/xcharts/",
+		tag: "chart"
+	},
+	{
+		name: "NVD3 - Re-usable charts for d3.js",
+		url: "http://nvd3.org/",
+		tag: "chart"
+	},
+	{
 		name: "Sigma.js - Draw graphs using the HTML canvas",
 		url: "http://sigmajs.org/",
 		tag: "chart"
@@ -436,5 +456,10 @@ var plugins = [
 		url: "http://danburzo.github.com/appseeds/",
 		tag: "other",
 		featured: true
+	},
+	{
+		name: "Ember Table - A fast, lazy rendered, easily extensible table built with Ember.js",
+		url: "http://addepar.github.com/ember-table/",
+		tag: "other"
 	}
 ];
