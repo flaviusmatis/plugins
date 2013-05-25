@@ -50,6 +50,16 @@ var plugins = [
 		tag: "slide"
 	},
 	{
+		name: "Chardin.js - Simple overlay instructions for your apps",
+		url: "http://heelhook.github.io/chardin.js/",
+		tag: "slide"
+	},
+	{
+		name: "Magnific Popup - Responsive jQuery lightbox plugin focused on performance",
+		url: "http://dimsemenov.com/plugins/magnific-popup/",
+		tag: "slide"
+	},
+	{
 		name: "Presenteer.js - Flexible HTML5 presentation tool",
 		url: "http://willemmulder.github.com/Presenteer.js/",
 		tag: "slide"
@@ -57,6 +67,11 @@ var plugins = [
 	{
 		name: "Presentz - Javascript library for synchronizing videos and slides",
 		url: "http://presentz.org/",
+		tag: "slide"
+	},
+	{
+		name: "Navi.js - Content switcher for developers",
+		url: "http://navi.grantcr.com/",
 		tag: "slide"
 	},
 	{
@@ -137,6 +152,11 @@ var plugins = [
 	{
 		name: "Zynga Scroller - Accelerated panning and zooming for DOM and Canvas",
 		url: "http://zynga.github.com/scroller/",
+		tag: "scroll"
+	},
+	{
+		name: "Perfect Scrollbar",
+		url: "http://noraesae.github.io/perfect-scrollbar/",
 		tag: "scroll"
 	},
 	{
@@ -271,6 +291,21 @@ var plugins = [
 		tag: "ui"
 	},
 	{
+		name: "MiniColors - Tiny color picker built on jQuery",
+		url: "http://labs.abeautifulsite.net/jquery-miniColors/",
+		tag: "ui"
+	},
+	{
+		name: "JSDB.io - The Database of JavaScript Libraries",
+		url: "http://www.jsdb.io/",
+		tag: "library"
+	},
+	{
+		name: "Howler.js - Modern Web Audio Javascript Library",
+		url: "http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library",
+		tag: "library"
+	},
+	{
 		name: "Hammer.js - Library for multi-touch gestures",
 		url: "http://eightmedia.github.com/hammer.js/",
 		tag: "library"
@@ -387,8 +422,13 @@ var plugins = [
 		tag: "form"
 	},
 	{
-		name: "Credit Card Validator",
-		url: "http://paweldecowski.github.com/jQuery-CreditCardValidator/",
+		name: "Behave.js - Add IDE style behaviors to plain text areas",
+		url: "http://jakiestfu.github.com/Behave.js/",
+		tag: "form"
+	},
+	{
+		name: "FilteredPaste.js - Filters any pasted input (tags or attributes that you don't want)",
+		url: "http://willemmulder.github.com/FilteredPaste.js/",
 		tag: "form"
 	},
 	{
@@ -460,6 +500,21 @@ var plugins = [
 	{
 		name: "Ember Table - A fast, lazy rendered, easily extensible table built with Ember.js",
 		url: "http://addepar.github.com/ember-table/",
+		tag: "other"
+	},
+	{
+		name: "Dropzone.js - Drag'n'drop file uploads",
+		url: "http://www.dropzonejs.com/",
+		tag: "other"
+	},
+	{
+		name: "Countable - Live paragraph, word and character counting",
+		url: "http://radlikewhoa.github.io/Countable/",
+		tag: "other"
+	},
+	{
+		name: "MixItUp - A CSS3 and JQuery Filter & Sort Plugin",
+		url: "http://mixitup.io/",
 		tag: "other"
 	}
 ];
