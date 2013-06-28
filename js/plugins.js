@@ -80,6 +80,16 @@ var plugins = [
 		tag: "map"
 	},
 	{
+		name: "Open Weather Map - Weather data and forecast API",
+		url: "http://openweathermap.org/",
+		tag: "map"
+	},
+	{
+		name: "Vector Tiles for MapBox Streets",
+		url: "http://www.mapbox.com/blog/vector-tiles/",
+		tag: "map"
+	},
+	{
 		name: "gmaps.js - Google Maps API",
 		url: "http://hpneo.github.com/gmaps/",
 		tag: "map"
@@ -356,6 +366,11 @@ var plugins = [
 		tag: "chart"
 	},
 	{
+		name: "Cytoscape.js - A JavaScript graph library for analysis and visualisation",
+		url: "http://cytoscape.github.io/cytoscape.js/",
+		tag: "chart"
+	},
+	{
 		name: "NVD3 - Re-usable charts for d3.js",
 		url: "http://nvd3.org/",
 		tag: "chart"
@@ -412,6 +427,16 @@ var plugins = [
 		tag: "form"
 	},
 	{
+		name: "Selectize - jQuery-based custom select control",
+		url: "http://brianreavis.github.io/selectize.js/",
+		tag: "form"
+	},
+	{
+		name: "Bootstrap-select - A custom select for @twitter bootstrap",
+		url: "http://silviomoreto.github.io/bootstrap-select/",
+		tag: "form"
+	},
+	{
 		name: "Sisyphus - Keep your form data on refresh",
 		url: "http://simsalabim.github.com/sisyphus/",
 		tag: "form"
@@ -432,8 +457,18 @@ var plugins = [
 		tag: "form"
 	},
 	{
+		name: "iCheck - Super customized checkboxes and radio buttons",
+		url: "http://damirfoy.com/iCheck/",
+		tag: "form"
+	},
+	{
 		name: "limit.js - Limit JavaScript events & calls",
 		url: "http://limit.gotsomething.com/",
+		tag: "other"
+	},
+	{
+		name: "Unveil.js - Lightway version of Lazy Load",
+		url: "http://luis-almeida.github.io/unveil/",
 		tag: "other"
 	},
 	{
