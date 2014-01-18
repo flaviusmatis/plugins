@@ -75,6 +75,11 @@ var plugins = [
 		tag: "slide"
 	},
 	{
+		name: "Maplace.js - A small Google Maps Javascript plugin for jQuery",
+		url: "http://maplacejs.com/",
+		tag: "map"
+	},
+	{
 		name: "jHERE - Maps Made Easy",
 		url: "http://jhere.net/",
 		tag: "map"
@@ -113,6 +118,11 @@ var plugins = [
 		name: "Wind Map",
 		url: "http://hint.fm/wind/",
 		tag: "map"
+	},
+	{
+		name: "Template-Engine-Chooser!",
+		url: "http://garann.github.io/template-chooser/",
+		tag: "template"
 	},
 	{
 		name: "Hogan.js - JavaScript templating from Twitter",
@@ -174,6 +184,16 @@ var plugins = [
 		url: "http://momentjs.com/",
 		tag: "date",
 		featured: true
+	},
+	{
+		name: "Pikaday - A refreshing JavaScript Datepicker",
+		url: "http://dbushell.github.io/Pikaday/",
+		tag: "date"
+	},
+	{
+		name: "Bootstrap-datepicker - Flexible datepicker widget for Twitter Bootstrap",
+		url: "http://eternicode.github.io/bootstrap-datepicker/",
+		tag: "date"
 	},
 	{
 		name: "XDate - Modern JavaScript Date Library",
@@ -460,6 +480,11 @@ var plugins = [
 		name: "iCheck - Super customized checkboxes and radio buttons",
 		url: "http://damirfoy.com/iCheck/",
 		tag: "form"
+	},
+	{
+		name: "Keypress - A robust Javascript library for capturing keyboard input",
+		url: "http://dmauro.github.io/Keypress/",
+		tag: "other"
 	},
 	{
 		name: "limit.js - Limit JavaScript events & calls",
