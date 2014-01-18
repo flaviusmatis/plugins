@@ -4,7 +4,7 @@ var categories = [
 		tag: "currency"
 	},
 	{
-		name: "Date",
+		name: "Date & Time",
 		tag: "date"
 	},
 	{
